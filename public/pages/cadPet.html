@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Cadastro de Pet</h1>
+    <form id="form-pet">
+        <label for="">Nome</label>
+        <input type="text" id="nome" name="nome">
+        </br></br>
+
+        <label for="">Animal</label>
+        <input type="text" id="animal" name="animal">
+        </br></br>
+
+        <label for="">Dono</label>
+        <select name="dono" id="dono"></select>
+        </br></br>
+
+        <label for="">Raca</label>
+        <input type="text" id="raca" name="raca">
+        </br></br>
+
+        <label for="">RGA</label>
+        <input type="text" id="rga" name="rga">
+        </br></br>
+        
+        <button type="submit" value="salvar">Enviar</button>
+    </form>
+
+    <h2>Pets Cadastrados</h2>
+    <ul id="listaPets"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/cadPet.js"></script>
+</body>
+</html>
