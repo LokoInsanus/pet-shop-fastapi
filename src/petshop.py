@@ -66,6 +66,7 @@ def listar_clientes(db:Session = Depends(get_db)):
 def cadastrar_cliente(cliente: Cliente, db:Session = Depends(get_db)):
     try:
         RepositorioCliente(db).criar(cliente)
+        return cliente
     except Exception as e:
         print("Erro ao criar cliente:", e)
         raise HTTPException(status_code=500, detail="Erro ao criar cliente")

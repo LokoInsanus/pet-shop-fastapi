@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       pets.forEach(pet => {
           const li = document.createElement('li')
-          li.textContent = `ID: ${pet.id}, Nome: ${pet.nome}, Animal: ${pet.animal}, Rua: ${pet.dono}, Bairro: ${pet.raca}, Casa: ${pet.rga}`
+          li.textContent = `ID: ${pet.id}, Nome: ${pet.nome}, Animal: ${pet.animal}, Dono: ${pet.dono}, Raça: ${pet.raca}, RGA: ${pet.rga}`
           
           const deleteButton = document.createElement('button')
           deleteButton.textContent = 'Deletar'

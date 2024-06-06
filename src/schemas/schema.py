@@ -1,7 +1,8 @@
 from pydantic import BaseModel
+from typing import Optional
 
 class Cliente(BaseModel):
-    id: int
+    id: Optional[int]
     nome: str
     email: str
     rua: str
@@ -11,7 +12,7 @@ class Cliente(BaseModel):
     cpf: str
 
 class Pet(BaseModel):
-    id: int
+    id: Optional[int]
     nome: str
     animal: str
     id_dono: int
